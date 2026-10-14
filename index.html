@@ -1,272 +1,106 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DigitalFoundry — We forge the systems your business runs on</title>
-<meta name="description" content="DigitalFoundry designs and builds custom AI agents, enterprise workflow automation and data infrastructure for owner-led SMEs and mid-market teams.">
-<meta property="og:title" content="DigitalFoundry"><meta property="og:description" content="We forge the systems your business runs on."><meta property="og:image" content="og.png">
+<meta name="description" content="DigitalFoundry designs and builds custom AI agents, enterprise workflow automation and data infrastructure for owner-led SMEs and mid-market teams. Built in South Africa.">
+<meta name="author" content="DigitalFoundry">
+<link rel="canonical" href="https://yacoobmohammed19.github.io/digitalfoundry-site/">
+<meta property="og:title" content="DigitalFoundry — We forge the systems your business runs on"><meta property="og:description" content="DigitalFoundry designs and builds custom AI agents, enterprise workflow automation and data infrastructure for owner-led SMEs and mid-market teams. Built in South Africa.">
+<meta property="og:url" content="https://yacoobmohammed19.github.io/digitalfoundry-site/"><meta property="og:type" content="website">
+<meta property="og:image" content="https://yacoobmohammed19.github.io/digitalfoundry-site/og.png"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0B1A1F">
-<link rel="icon" href="favicon.png">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--teal:#12C4B0;--cyan:#0B7F9A;--ft:#0E9AA0;--ink:#0B1A1F;--mint:#5FE3D2;--mist:#ECF6F5;
---ink2:#0F2127;--line:rgba(95,227,210,.14);--mut:rgba(236,246,245,.66);--g:linear-gradient(135deg,#12C4B0,#0B7F9A)}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{background:var(--ink);color:var(--mist);font:400 16.5px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3,h4{font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.08;color:#fff;letter-spacing:-.02em}
-a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
-.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-.eyebrow{font:500 12.5px/1 'JetBrains Mono',monospace;color:var(--mint);letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px;display:flex;align-items:center;gap:12px}
-.eyebrow:before{content:"";width:28px;height:1px;background:var(--mint)}
-section{padding:120px 0;position:relative}
-h2{font-size:clamp(32px,4.6vw,56px);font-weight:600;margin-bottom:18px;max-width:820px}
-.lead{max-width:640px;color:var(--mut);font-size:18px;margin-bottom:56px}
-.alt{background:linear-gradient(180deg,var(--ink2),var(--ink));border-block:1px solid var(--line)}
-nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
-nav.s{background:rgba(11,26,31,.82);backdrop-filter:blur(14px);border-color:var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
-nav img{height:34px;display:block}nav ul{display:flex;gap:30px;list-style:none;font-size:14.5px;color:var(--mut)}
-nav ul a{transition:color .2s}nav ul a:hover{color:var(--mint)}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:10px;font-weight:500;font-size:15px;background:var(--g);color:#fff;transition:transform .2s,box-shadow .2s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(18,196,176,.28)}
-.btn.ghost{background:none;border:1px solid rgba(95,227,210,.35);color:var(--mint)}.btn.ghost:hover{background:rgba(95,227,210,.08);box-shadow:none}
-.btn.sm{padding:10px 18px;font-size:14px}
-.hero{padding:170px 0 110px;overflow:hidden;background:radial-gradient(55% 60% at 85% 0%,rgba(18,196,176,.2),transparent 70%),radial-gradient(45% 50% at 0% 100%,rgba(11,127,154,.22),transparent 70%)}
-.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;opacity:.28;-webkit-mask-image:radial-gradient(70% 70% at 70% 30%,#000,transparent);mask-image:radial-gradient(70% 70% at 70% 30%,#000,transparent)}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-h1{font-size:clamp(42px,6vw,78px);font-weight:700;letter-spacing:-.035em}
-h1 em{font-style:normal;background:linear-gradient(90deg,var(--teal),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p.sub{max-width:540px;margin:26px 0 38px;font-size:19px;color:var(--mut)}
-.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap}
-.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:44px}
-.pill{font:500 12px/1 'JetBrains Mono',monospace;padding:9px 13px;border:1px solid var(--line);border-radius:99px;color:var(--mut);background:rgba(236,246,245,.03)}
-.pill i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--teal);margin-right:8px;box-shadow:0 0 8px var(--teal)}
-.console{border:1px solid var(--line);border-radius:16px;background:rgba(15,33,39,.75);backdrop-filter:blur(8px);box-shadow:0 30px 80px rgba(0,0,0,.4);overflow:hidden}
-.console .bar{display:flex;gap:7px;padding:13px 16px;border-bottom:1px solid var(--line);align-items:center}
-.console .bar b{width:10px;height:10px;border-radius:50%;background:rgba(236,246,245,.15)}.console .bar span{margin-left:10px;font:12px 'JetBrains Mono',monospace;color:var(--mut)}
-.console pre{padding:20px 22px;font:13px/1.9 'JetBrains Mono',monospace;color:var(--mut);white-space:pre-wrap;min-height:290px}
-.console .k{color:var(--mint)}.console .ok{color:var(--teal)}.console .d{color:rgba(236,246,245,.35)}
-.cur{display:inline-block;width:8px;height:15px;background:var(--mint);vertical-align:-2px;animation:bl 1s steps(2) infinite}@keyframes bl{50%{opacity:0}}
-.strip{border-block:1px solid var(--line);background:rgba(236,246,245,.02)}
-.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.strip .m{padding:34px 24px;border-right:1px solid var(--line)}.strip .m:last-child{border:0}
-.m .v{font:600 40px/1 'Space Grotesk';color:#fff;letter-spacing:-.03em}.m .v span{color:var(--mint)}.m .l{font-size:13.5px;color:var(--mut);margin-top:10px}
-.tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
-.tab{padding:12px 20px;border:1px solid var(--line);border-radius:10px;font:500 14.5px 'Space Grotesk';color:var(--mut);transition:.2s}
-.tab:hover{color:#fff;border-color:rgba(95,227,210,.4)}.tab.on{background:var(--g);color:#fff;border-color:transparent}
-.svc{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
-.panel{border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,rgba(236,246,245,.05),rgba(236,246,245,.015));padding:38px}
-.panel h3{font-size:30px;margin-bottom:12px}.panel>p{color:var(--mut);margin-bottom:26px}
-.spec{list-style:none}
-.spec li{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line);font-size:14.5px}
-.spec li b{font:500 12px 'JetBrains Mono',monospace;color:var(--mint);text-transform:uppercase;letter-spacing:.08em;padding-top:3px}.spec li span{color:rgba(236,246,245,.8)}
-.diagram{padding:26px;display:flex;flex-direction:column}
-.diagram svg{width:100%;height:auto;display:block}
-.node rect{fill:#10282f;stroke:rgba(95,227,210,.28);stroke-width:1;transition:.25s}
-.node text{fill:var(--mist);font:500 12.5px 'Space Grotesk';pointer-events:none}.node .s{fill:rgba(236,246,245,.6);font:10.5px 'JetBrains Mono'}
-.node{cursor:pointer;outline:0}.node:hover rect,.node:focus rect,.node.on rect{stroke:var(--teal);fill:#123640;filter:drop-shadow(0 0 10px rgba(18,196,176,.45))}
-.edge{stroke:rgba(95,227,210,.3);stroke-width:1.4;fill:none}
-.flow{stroke:var(--mint);stroke-width:2;fill:none;stroke-dasharray:4 14;animation:fl 1.4s linear infinite;stroke-linecap:round}@keyframes fl{to{stroke-dashoffset:-18}}
-.zone{fill:none;stroke:rgba(95,227,210,.18);stroke-dasharray:3 5}.zl{fill:rgba(95,227,210,.55);font:10px 'JetBrains Mono';letter-spacing:.12em}
-.detail{margin-top:16px;padding:16px 18px;border-radius:12px;background:rgba(18,196,176,.07);border:1px solid var(--line);font-size:14px;color:rgba(236,246,245,.85);min-height:92px}
-.detail b{display:block;font:600 15px 'Space Grotesk';color:var(--mint);margin-bottom:4px}
-.hint{font:11.5px 'JetBrains Mono';color:var(--mut);margin-bottom:10px}
-.eng{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.model{border:1px solid var(--line);border-radius:20px;padding:34px 30px;background:rgba(236,246,245,.03);transition:.25s;text-align:left;display:flex;flex-direction:column}
-.model:hover{transform:translateY(-4px);border-color:rgba(95,227,210,.4)}
-.model.on{border-color:var(--teal);background:linear-gradient(160deg,rgba(18,196,176,.14),rgba(11,127,154,.05));box-shadow:0 20px 60px rgba(18,196,176,.12)}
-.model .t{font:500 12px 'JetBrains Mono';color:var(--mint);letter-spacing:.12em;text-transform:uppercase}
-.model h3{font-size:27px;margin:14px 0 10px}.model p{color:var(--mut);font-size:15px}
-.model ul{list-style:none;margin-top:20px;font-size:14px;display:grid;gap:9px}.model li{padding-left:22px;position:relative;color:rgba(236,246,245,.8)}
-.model li:before{content:"";position:absolute;left:0;top:7px;width:9px;height:9px;background:var(--g);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
-.fit{margin-top:24px;padding:26px 30px;border-radius:16px;border:1px dashed rgba(95,227,210,.3);display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;font-size:14.5px}
-.fit h4{font:500 12px 'JetBrains Mono';color:var(--mint);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}.fit p{color:rgba(236,246,245,.8)}
-.tl{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.tl:before{content:"";position:absolute;top:22px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),var(--cyan) 60%,rgba(11,127,154,.15))}
-.ph{position:relative;padding-top:60px;cursor:pointer;text-align:left}
-.ph .dot{position:absolute;top:8px;left:0;width:30px;height:30px;background:var(--ink);border:2px solid var(--teal);border-radius:50%;display:grid;place-items:center;transition:.25s}
-.ph .dot:after{content:"";width:10px;height:10px;background:var(--teal);border-radius:50%;transition:.25s}
-.ph.on .dot{background:var(--teal);box-shadow:0 0 0 6px rgba(18,196,176,.2)}.ph.on .dot:after{background:var(--ink)}
-.ph .wk{font:500 12px 'JetBrains Mono';color:var(--mint);letter-spacing:.1em}.ph h3{font-size:30px;margin:8px 0 10px}
-.ph p{color:var(--mut);font-size:15px}
-.ph .more{max-height:0;overflow:hidden;transition:max-height .4s,opacity .4s;opacity:0}.ph.on .more{max-height:320px;opacity:1}
-.ph ul{list-style:none;margin-top:16px;font-size:13.5px;display:grid;gap:8px;color:rgba(236,246,245,.8)}.ph li{padding-left:18px;position:relative}.ph li:before{content:"→";position:absolute;left:0;color:var(--teal)}
-.ph .out{margin-top:14px;font:12px 'JetBrains Mono';color:var(--mint);padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:rgba(18,196,176,.06)}
-.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.case{border:1px solid var(--line);border-radius:20px;padding:32px;background:linear-gradient(170deg,rgba(236,246,245,.05),rgba(236,246,245,.01));display:flex;flex-direction:column;transition:.25s}
-.case:hover{border-color:rgba(95,227,210,.4);transform:translateY(-4px)}
-.case .tag{font:500 11.5px 'JetBrains Mono';color:var(--mint);letter-spacing:.1em;text-transform:uppercase}
-.case h3{font-size:23px;margin:14px 0 10px}.case p{font-size:14.5px;color:var(--mut)}
-.case .kp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:auto;padding-top:26px}
-.case .kp div{border-top:1px solid var(--line);padding-top:14px}.case .kp b{display:block;font:600 28px 'Space Grotesk';color:#fff;letter-spacing:-.03em}.case .kp b span{color:var(--mint)}.case .kp small{font-size:12px;color:var(--mut)}
-.note{margin-top:22px;font-size:13px;color:rgba(236,246,245,.5);max-width:760px}
-.calc{margin-top:48px;border:1px solid var(--line);border-radius:20px;padding:34px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;background:rgba(236,246,245,.03)}
-.calc h3{font-size:26px;margin-bottom:6px}.calc p.s{color:var(--mut);font-size:14.5px;margin-bottom:22px}
-.sl{margin-bottom:20px}.sl label{display:flex;justify-content:space-between;font-size:14px;margin-bottom:8px;color:rgba(236,246,245,.85)}.sl label b{font:500 14px 'JetBrains Mono';color:var(--mint)}
-input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:4px;border-radius:4px;background:rgba(95,227,210,.22);outline:0}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--g);border:3px solid var(--ink);box-shadow:0 0 0 1px var(--teal);cursor:pointer}
-input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--teal);border:3px solid var(--ink);cursor:pointer}
-.res{border-radius:16px;background:linear-gradient(160deg,rgba(18,196,176,.14),rgba(11,127,154,.06));border:1px solid rgba(95,227,210,.25);padding:28px;display:flex;flex-direction:column;justify-content:center}
-.res .big{font:600 48px/1 'Space Grotesk';color:#fff;letter-spacing:-.03em}.res .big span{color:var(--mint)}.res small{color:var(--mut);font-size:13px;display:block;margin:8px 0 22px}
-.res .fn{font-size:12px;color:rgba(236,246,245,.5);margin-top:6px}
-.pr{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.pr div{border-top:2px solid var(--teal);padding-top:20px}.pr h4{font-size:19px;margin-bottom:8px}.pr p{font-size:14.5px;color:var(--mut)}
-.cta{text-align:center;padding:140px 0;background:radial-gradient(50% 80% at 50% 100%,rgba(18,196,176,.26),transparent 70%)}
-.cta h2{margin:0 auto 18px;max-width:760px}.cta p{color:var(--mut);margin:0 auto 36px;max-width:560px}
-.cta .soon{display:inline-block;padding:14px 26px;border:1px solid rgba(95,227,210,.35);border-radius:10px;color:var(--mint);font:500 13px 'JetBrains Mono';letter-spacing:.06em}
-footer{padding:40px 0;border-top:1px solid var(--line);font-size:13.5px;color:rgba(236,246,245,.5)}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}footer img{height:26px}
-.rv{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
-@media(max-width:960px){.hero .wrap,.svc,.calc{grid-template-columns:1fr}.eng,.cases,.fit{grid-template-columns:1fr}.tl{grid-template-columns:1fr 1fr;row-gap:40px}.tl:before{display:none}.pr{grid-template-columns:1fr 1fr}.strip .wrap{grid-template-columns:1fr 1fr}.strip .m:nth-child(2){border-right:0}.strip .m{border-bottom:1px solid var(--line)}nav ul{display:none}section{padding:84px 0}.hero{padding-top:130px}}
-@media(max-width:560px){.tl,.pr{grid-template-columns:1fr}.spec li{grid-template-columns:1fr;gap:2px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
-</style></head><body>
-<nav id="nav"><div class="wrap"><a href="#top"><img src="logo.svg" alt="DigitalFoundry"></a>
-<ul><li><a href="#services">Capabilities</a></li><li><a href="#engage">Engagement</a></li><li><a href="#process">Process</a></li><li><a href="#work">Work</a></li></ul>
-<a class="btn sm" href="#contact">Start a project</a></div></nav>
-
-<header class="hero" id="top"><div class="wrap">
-<div>
-<div class="eyebrow">AI agents · Automation · Data infrastructure</div>
-<h1>We forge the <em>systems</em> your business runs on.</h1>
-<p class="sub">DigitalFoundry designs, builds and runs production-grade AI agents, workflow automation and data infrastructure for owner-led SMEs and mid-market teams.</p>
-<div class="cta-row"><a class="btn" href="#contact">Start a project <span>→</span></a><a class="btn ghost" href="#services">Explore capabilities</a></div>
+<link rel="stylesheet" href="css/df.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "DigitalFoundry", "url": "https://yacoobmohammed19.github.io/digitalfoundry-site/", "logo": "https://yacoobmohammed19.github.io/digitalfoundry-site/assets/logo-light.svg", "description": "DigitalFoundry designs and builds custom AI agents, workflow automation and data infrastructure for owner-led SMEs and mid-market teams.", "areaServed": [{"@type": "Country", "name": "South Africa"}, {"@type": "AdministrativeArea", "name": "Worldwide"}], "slogan": "We forge the systems your business runs on."}</script>
+</head>
+<body>
+<nav id="site-nav" class="site-nav"></nav>
+<main>
+<section class="hero"><canvas class="hero-canvas" id="heroCanvas"></canvas><div class="hero-gradient"></div>
+<div class="hero-content"><div>
+<div class="hero-eyebrow">AI agents · Automation · Data infrastructure</div>
+<h1 class="hero-title"><span class="word">We</span><span class="word">forge</span><span class="word">the</span><span class="word highlight">systems</span><span class="word">your</span><span class="word">business</span><span class="word">runs</span><span class="word">on.</span></h1>
+<p class="hero-sub">DigitalFoundry designs, builds and runs production-grade AI agents, workflow automation and data infrastructure for owner-led SMEs and mid-market teams.</p>
+<div class="hero-buttons"><a class="btn-primary" href="contact.html">Start a project <span>→</span></a><a class="btn-outline" href="capabilities.html">Explore capabilities</a></div>
 <div class="pills"><span class="pill"><i></i>Human-in-the-loop by design</span><span class="pill"><i></i>Fixed-scope delivery</span><span class="pill"><i></i>Built in South Africa</span></div>
 </div>
 <div class="console" aria-hidden="true"><div class="bar"><b></b><b></b><b></b><span>foundry / run-log</span></div><pre id="term"></pre></div>
-</div></header>
+</div><div class="hero-scroll"><span></span></div></section>
 
-<div class="strip" id="strip"><div class="wrap">
+<div class="strip" id="strip"><div class="section-inner">
 <div class="m"><div class="v"><span data-n="4">0</span></div><div class="l">Stage method: Unpack, Prioritise, Forge, Run</div></div>
 <div class="m"><div class="v"><span data-n="3">0</span></div><div class="l">Core disciplines under one roof</div></div>
 <div class="m"><div class="v"><span data-n="24">0</span><span>/7</span></div><div class="l">Always-on agents with monitored hand-off</div></div>
 <div class="m"><div class="v"><span data-n="100">0</span><span>%</span></div><div class="l">Of your data and code stays yours</div></div>
 </div></div>
-
-<section id="services"><div class="wrap">
-<div class="eyebrow rv">Capabilities</div><h2 class="rv">Three disciplines. One engineered system.</h2>
-<p class="lead rv">Each capability stands alone and is stronger together. Select a discipline, then select any component in the architecture to see how it works.</p>
-<div class="tabs rv" id="tabs" role="tablist"></div>
-<div class="svc rv"><div class="panel" id="spec"></div>
-<div class="panel diagram"><div class="hint">▸ INTERACTIVE ARCHITECTURE — select a node</div><svg id="dg" viewBox="0 0 560 360" role="img" aria-label="Architecture diagram"></svg><div class="detail" id="det"></div></div></div>
+<section class="section section-light"><div class="section-inner">
+<div class="grid-2"><div>
+<div class="eyebrow reveal">Who we are</div>
+<h2 class="heading-xl scroll-words">Engineering partners for businesses that have outgrown manual work.</h2>
+<div class="divider-gradient reveal"></div>
+<a href="about.html" class="btn-dark reveal">About DigitalFoundry →</a></div>
+<div class="scroll-stagger">
+<p class="text-body scroll-para">DigitalFoundry is a South African engineering studio. We take the processes your team keeps patching with spreadsheets, inboxes and copy-paste, and turn them into systems that run on their own.</p>
+<p class="text-body scroll-para">We work in a fixed four-stage method, <strong>Unpack, Prioritise, Forge, Run</strong>, with a defined output at the end of every stage. You know what you are getting, what it costs and when it lands before a line of code is written.</p>
+<p class="text-body scroll-para">Agents act inside limits you set and escalate to a person when it matters. Everything we build is logged, documented and handed over. The code, the data and the documentation are yours.</p>
+</div></div>
 </div></section>
-
-<section id="engage" class="alt"><div class="wrap">
-<div class="eyebrow rv">Engagement models</div><h2 class="rv">Choose how we work with you.</h2>
-<p class="lead rv">Three structures, one standard of delivery. Select a model to see where it fits. Scope and pricing are agreed in writing before any build starts.</p>
-<div class="eng rv" id="eng"></div>
-<div class="fit rv" id="fit"></div>
-</div></section>
-
-<section id="process"><div class="wrap">
-<div class="eyebrow rv">Delivery process</div><h2 class="rv">From messy process to a system that runs.</h2>
-<p class="lead rv">A fixed four-stage path with a defined output at the end of every stage. Select a stage for detail. Durations are indicative for a typical single-system build.</p>
-<div class="tl rv" id="tl"></div>
-</div></section>
-
-<section id="work" class="alt"><div class="wrap">
-<div class="eyebrow rv">Case studies</div><h2 class="rv">What a forged system looks like in practice.</h2>
-<p class="lead rv">Representative engagement scenarios, showing the shape of problem we take on and the measures we hold ourselves to.</p>
-<div class="cases rv">
-<div class="case"><span class="tag">AI agents · Services</span><h3>After-hours enquiry agent</h3><p>A service business loses leads that arrive outside office hours. An agent answers on WhatsApp and web chat from approved business knowledge, qualifies the enquiry, books it and hands anything unusual to a person with the full thread.</p><div class="kp"><div><b><span>&lt;</span>1 min</b><small>Target first response, 24/7</small></div><div><b>1</b><small>Inbox for human hand-offs</small></div></div></div>
-<div class="case"><span class="tag">Workflow automation · Operations</span><h3>Quote-to-invoice pipeline</h3><p>Quotes, approvals, invoices and payment follow-ups are re-keyed across email, spreadsheets and accounting. We connect them into one event-driven flow with approval gates and a complete audit trail.</p><div class="kp"><div><b>5<span>→</span>1</b><small>Target manual touchpoints per order</small></div><div><b>100<span>%</span></b><small>Steps logged and traceable</small></div></div></div>
-<div class="case"><span class="tag">Data infrastructure · Mid-market</span><h3>Single source of truth</h3><p>Sales, stock and finance each report different numbers. We consolidate sources into a governed warehouse with a metrics layer, so every dashboard answers from the same definitions.</p><div class="kp"><div><b>1</b><small>Definition per business metric</small></div><div><b>Daily</b><small>Refresh, monitored with alerts</small></div></div></div>
+<section class="section section-dark" id="services"><div class="section-inner">
+<div class="text-center"><div class="eyebrow reveal">Capabilities</div>
+<h2 class="heading-lg reveal">Three disciplines. One engineered system.</h2>
+<p class="lead mx reveal">Each capability stands alone and is stronger together. Open a discipline for the full architecture, components and standards.</p></div>
+<div class="grid-3 reveal">
+<a class="card" href="ai-agents.html"><div class="card-icon">01</div><h3>Custom AI agents</h3><p>Purpose-built agents that handle customer conversations and internal work across WhatsApp, web, email and voice, grounded in your own knowledge and bounded by rules you set.</p><span class="card-link">See the architecture →</span></a>
+<a class="card" href="workflow-automation.html"><div class="card-icon">02</div><h3>Enterprise workflow automation</h3><p>Event-driven automation that connects the systems you already use, removes re-keying and adds approval gates and a full audit trail to critical processes.</p><span class="card-link">See the architecture →</span></a>
+<a class="card" href="data-infrastructure.html"><div class="card-icon">03</div><h3>Data infrastructure</h3><p>Governed pipelines, a clean warehouse and a shared metrics layer, so every dashboard and every AI agent answers from the same trusted numbers.</p><span class="card-link">See the architecture →</span></a>
 </div>
-<p class="note rv">Scenarios are illustrative of typical engagements. Figures shown are design targets we scope against, not published client results. Named references are shared on request once a client agrees.</p>
-
-<div class="calc rv"><div><h3>Estimate the time an automation could return</h3><p class="s">A rough, transparent model to frame the conversation. Adjust the sliders to your business.</p>
+</div></section>
+<section class="section section-alt"><div class="section-inner">
+<div class="eyebrow reveal">Interactive architecture</div><h2 class="heading-lg reveal">See how a forged system fits together.</h2>
+<p class="lead reveal">Select a discipline, then select any component to see how it works and what it connects to.</p>
+<div class="tabs reveal" id="tabs" role="tablist"></div>
+<div class="svc reveal"><div class="panel" id="spec"></div><div class="panel diagram"><div class="hint">▸ INTERACTIVE ARCHITECTURE — select a node</div><svg id="dg" viewBox="0 0 560 360" role="img" aria-label="Architecture diagram"></svg><div class="detail" id="det"></div></div></div>
+</div></section>
+<section class="section section-dark"><div class="section-inner">
+<div class="eyebrow reveal">The method</div><h2 class="heading-lg reveal">Unpack. Prioritise. Forge. Run.</h2>
+<p class="lead reveal">A fixed four-stage path with a defined output at the end of every stage. Select a stage for detail.</p>
+<div class="tl reveal" id="tl"></div>
+<div class="mt-lg reveal"><a href="process.html" class="btn-outline">Full delivery process →</a></div>
+</div></section>
+<section class="section section-light"><div class="section-inner">
+<div class="eyebrow reveal">Engineering principles</div><h2 class="heading-lg reveal">How we build, every time.</h2>
+<p class="lead reveal">The standards that separate a system your team trusts from a demo that impresses once.</p>
+<div class="pr reveal">
+<div><h4>Owned by you</h4><p>Your data, code and documentation are yours. No lock-in, no black boxes.</p></div>
+<div><h4>Human in the loop</h4><p>Agents act inside defined limits and escalate with context when confidence is low.</p></div>
+<div><h4>Observable</h4><p>Logging, alerts and audit trails on every workflow, so you can see what ran and why.</p></div>
+<div><h4>Secure by default</h4><p>Least-privilege access, encrypted secrets, and personal data handled with POPIA in mind.</p></div></div>
+</div></section>
+<section class="section section-alt"><div class="section-inner">
+<div class="text-center"><div class="eyebrow reveal">Where it applies</div><h2 class="heading-lg reveal">The shape of problem we take on.</h2>
+<p class="lead mx reveal">Representative scenarios, with the measures we design against. The full write-ups are on the Work page.</p></div>
+<div class="grid-3 reveal">
+<div class="card"><span class="tag">AI agents · Services</span><h3>After-hours enquiry agent</h3><p>Leads that arrive outside office hours get an immediate, accurate answer and a booked next step.</p><div class="kp"><div><b><span>&lt;</span>1 min</b><small>Target first response, 24/7</small></div><div><b>1</b><small>Inbox for human hand-offs</small></div></div></div>
+<div class="card"><span class="tag">Automation · Operations</span><h3>Quote-to-invoice pipeline</h3><p>Quotes, approvals, invoices and follow-ups flow through one event-driven path with a full audit trail.</p><div class="kp"><div><b>5<span>→</span>1</b><small>Target manual touchpoints per order</small></div><div><b>100<span>%</span></b><small>Steps logged and traceable</small></div></div></div>
+<div class="card"><span class="tag">Data · Mid-market</span><h3>Single source of truth</h3><p>Sales, stock and finance report from one governed metrics layer instead of three competing spreadsheets.</p><div class="kp"><div><b>1</b><small>Definition per business metric</small></div><div><b>Daily</b><small>Refresh, monitored with alerts</small></div></div></div>
+</div><p class="note">Scenarios are illustrative of typical engagements. Figures are design targets we scope against, not published client results.</p>
+</div></section>
+<section class="section section-dark"><div class="section-inner">
+<div class="eyebrow reveal">Planning tool</div><h2 class="heading-lg reveal">Estimate the time an automation could return.</h2><p class="lead reveal">A rough, transparent model to frame the conversation. Adjust the sliders to your business.</p>
+<div class="calc reveal"><div><h3>Hours back to your team</h3><p class="s">Three inputs, one honest formula.</p>
 <div class="sl"><label for="r1">Repetitive tasks per week <b id="v1"></b></label><input type="range" id="r1" min="10" max="500" step="10" value="120"></div>
 <div class="sl"><label for="r2">Minutes spent per task <b id="v2"></b></label><input type="range" id="r2" min="2" max="60" step="1" value="12"></div>
 <div class="sl"><label for="r3">Share of tasks we can automate <b id="v3"></b></label><input type="range" id="r3" min="20" max="90" step="5" value="60"></div></div>
 <div class="res"><div class="big"><span id="o1">0</span> h</div><small>staff hours returned per month</small><div class="big"><span id="o2">0</span> days</div><small>working days per year back in your team's hands</small><div class="fn">Hours = tasks × minutes × automation share × 52 ÷ 12 ÷ 60. A planning estimate, confirmed during Unpack.</div></div></div>
 </div></section>
-
-<section><div class="wrap">
-<div class="eyebrow rv">Engineering principles</div><h2 class="rv">How we build, every time.</h2><p class="lead rv">The standards that separate a system your team trusts from a demo that impresses once.</p>
-<div class="pr rv">
-<div><h4>Owned by you</h4><p>Your data, code and documentation are yours. No lock-in, no black boxes.</p></div>
-<div><h4>Human in the loop</h4><p>Agents act inside defined limits and escalate with context when confidence is low.</p></div>
-<div><h4>Observable</h4><p>Logging, alerts and audit trails on every workflow, so you can see what ran and why.</p></div>
-<div><h4>Secure by default</h4><p>Least-privilege access, encrypted secrets, and personal data handled with POPIA in mind.</p></div>
-</div></div></section>
-
-<section class="cta" id="contact"><div class="wrap">
-<div class="eyebrow rv" style="justify-content:center">Start a project</div>
-<h2 class="rv">Got a process that should run itself?</h2><p class="rv">Tell us what is slowing the business down. We will tell you plainly whether we can fix it, and what it would take.</p>
-<span class="soon rv">CONTACT DETAILS COMING SOON</span></div></section>
-<footer><div class="wrap"><img src="logo.svg" alt="DigitalFoundry"><span>© 2026 DigitalFoundry. We forge the systems your business runs on.</span></div></footer>
-
-<script>
-const $=s=>document.querySelector(s);
-addEventListener('scroll',()=>$('#nav').classList.toggle('s',scrollY>20),{passive:true});
-(function(){const L=[
-'<span class="d">$</span> <span class="k">foundry</span> unpack --client acme',
-'<span class="ok">✓</span> 14 processes mapped, 3 prioritised',
-'<span class="d">$</span> <span class="k">foundry</span> forge intake-agent',
-'<span class="ok">✓</span> knowledge base indexed',
-'<span class="ok">✓</span> guardrails + escalation rules set',
-'<span class="ok">✓</span> connected: CRM · WhatsApp · accounting',
-'<span class="d">$</span> <span class="k">foundry</span> run --monitor',
-'<span class="ok">●</span> live · 24/7 · human hand-off armed<span class="cur"></span>'];
-const t=$('#term');let i=0;
-function step(){if(i>=L.length)return;i++;t.innerHTML=L.slice(0,i).join('\n');setTimeout(step,i%2?650:420)}
-if(matchMedia('(prefers-reduced-motion:reduce)').matches){t.innerHTML=L.join('\n')}else step()})();
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);
- e.target.classList.add('in');
- e.target.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n;let s=null;const f=t=>{s=s||t;const p=Math.min((t-s)/1200,1);c.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)})}),{threshold:.12});
-document.querySelectorAll('.rv,#strip').forEach(e=>io.observe(e));
-
-const S=[
-{k:'AI agents',t:'Custom AI agents',p:'Purpose-built agents that handle customer conversations and internal work across your channels, grounded in your own knowledge and bounded by rules you set.',
- spec:[['Agents','Customer-facing assistants, internal knowledge agents, document and email triage'],['Channels','WhatsApp, web chat, email, voice, internal tools'],['Grounding','Retrieval over your policies, products and records, with source citations'],['Guardrails','Approved-answer scope, confidence thresholds, escalation to a named person'],['Evaluation','Test sets built from your real conversations, reviewed before and after launch']],
- nodes:[['in','Channels','WhatsApp · web · email',20,40],['gw','Orchestrator','intent + routing',200,40],['kb','Knowledge','retrieval · RAG',380,40],['llm','Reasoning','model + tools',200,150],['gr','Guardrails','policy + limits',380,150],['act','Actions','CRM · calendar · billing',20,150],['hum','Human hand-off','escalate with context',20,260],['ob','Observability','logs · evals · alerts',380,260]],
- edges:[[0,1],[1,2],[1,3],[3,4],[3,5],[4,7],[3,6]],
- d:{in:'Where customers and staff reach the agent. One agent can serve several channels with consistent behaviour.',gw:'Classifies intent, selects the right skill or tool and maintains conversation state.',kb:'Your approved content is indexed and retrieved at answer time, so responses stay current and traceable to a source.',llm:'The reasoning layer plans steps and calls tools. Model choice is made per task for quality, cost and data sensitivity.',gr:'Hard limits on what the agent may say or do. Out-of-scope or low-confidence cases never reach the customer unreviewed.',act:'Connected systems the agent can read and write, through scoped permissions and approval steps where needed.',hum:'A person receives the full thread and context, takes over, and the outcome feeds back into the agent.',ob:'Every conversation and tool call is logged. Quality is measured against test sets and drift triggers alerts.'}},
-{k:'Workflow automation',t:'Enterprise workflow automation',p:'Event-driven automation that connects the systems you already pay for, removes manual re-keying and adds approvals and audit trails to critical processes.',
- spec:[['Scope','Order-to-cash, onboarding, procurement, reporting, document handling'],['Integration','REST APIs, webhooks, accounting, CRM, ERP, e-commerce, email'],['Control','Approval gates, role-based access, full audit log of every step'],['Resilience','Retries, idempotency, failure queue and alerts'],['Handover','Runbooks and documentation so your team can operate it']],
- nodes:[['src','Triggers','events · forms · email',20,40],['ev','Event bus','queue + validation',200,40],['rule','Rules engine','routing + logic',380,40],['ap','Approvals','human sign-off',380,150],['sys','Your systems','CRM · ERP · accounting',200,150],['ai','AI steps','extract · classify',20,150],['dlq','Failure queue','retry · alert',20,260],['aud','Audit log','who · what · when',380,260]],
- edges:[[0,1],[1,2],[2,3],[2,4],[1,5],[1,6],[3,7]],
- d:{src:'Anything that starts work: a form, an email, a payment, a schedule or a change in another system.',ev:'Events are validated, de-duplicated and queued so nothing is lost or processed twice.',rule:'Business rules decide the path: thresholds, customer type, region, risk. Changes are versioned.',ap:'Where policy needs a person, the right approver is notified and the flow waits, with reminders and escalation.',sys:'Writes land in your existing tools through scoped credentials, keeping a single source of truth.',ai:'AI is used where documents and free text are involved, such as extracting invoice data, always with a validation step.',dlq:'Failed steps retry with back-off, then land in a queue with an alert. Nothing fails silently.',aud:'A record of each step supports finance, compliance and fast troubleshooting.'}},
-{k:'Data infrastructure',t:'Data infrastructure',p:'The foundations that make reporting and AI reliable: governed pipelines, a clean warehouse and a shared metrics layer your whole business can trust.',
- spec:[['Pipelines','Scheduled and streaming ingestion with schema checks and lineage'],['Storage','Cloud warehouse with raw, cleaned and business-ready layers'],['Metrics','One governed definition per KPI, served to every dashboard'],['Quality','Automated tests for freshness, completeness and anomalies'],['Security','Role-based access, encryption and POPIA-aware retention']],
- nodes:[['s1','Sources','apps · files · APIs',20,40],['ing','Ingestion','extract + validate',200,40],['raw','Raw layer','immutable landing',380,40],['mod','Transform','clean + model',380,150],['wh','Warehouse','business-ready',200,150],['met','Metrics layer','governed KPIs',20,150],['bi','Dashboards','BI · reports · AI',20,260],['q','Quality + access','tests · roles · alerts',380,260]],
- edges:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[3,7]],
- d:{s1:'Operational systems, spreadsheets, accounting and third-party APIs, each connected with credentials you control.',ing:'Pulls data on schedule or in real time and rejects malformed records at the door.',raw:'An untouched copy of source data. It allows reprocessing and gives a defensible audit position.',mod:'Versioned transformations turn raw records into clean, joined, documented tables.',wh:'The business-ready layer that analysts, dashboards and AI agents all query.',met:'Revenue, margin, churn: defined once, used everywhere. Ends the "which number is right?" debate.',bi:'Dashboards and exports for teams, plus a trusted data feed for your AI agents.',q:'Freshness and quality tests, role-based access and alerts keep the platform trustworthy over time.'}}];
-let cur=0,sel=null;
-function render(){const s=S[cur];
- $('#tabs').innerHTML=S.map((x,i)=>`<button class="tab ${i==cur?'on':''}" role="tab" aria-selected="${i==cur}" onclick="cur=${i};sel=null;render()">${x.k}</button>`).join('');
- $('#spec').innerHTML=`<h3>${s.t}</h3><p>${s.p}</p><ul class="spec">${s.spec.map(r=>`<li><b>${r[0]}</b><span>${r[1]}</span></li>`).join('')}</ul>`;
- const W=160,H=62;let h='<rect class="zone" x="6" y="14" width="548" height="338" rx="14"/><text class="zl" x="20" y="30">SYSTEM BOUNDARY</text>';
- h+=s.edges.map(e=>{const a=s.nodes[e[0]],b=s.nodes[e[1]];const x1=a[3]+W/2,y1=a[4]+H/2,x2=b[3]+W/2,y2=b[4]+H/2;
-  const p=`M${x1} ${y1} C${(x1+x2)/2} ${y1},${(x1+x2)/2} ${y2},${x2} ${y2}`;const on=sel!==null&&(s.nodes[sel]==a||s.nodes[sel]==b);
-  return `<path class="edge" d="${p}"/><path class="flow" style="opacity:${on?1:.3}" d="${p}"/>`}).join('');
- h+=s.nodes.map((n,i)=>`<g class="node ${sel===i?'on':''}" tabindex="0" role="button" onclick="pick(${i})" onmouseenter="pick(${i})" onfocus="pick(${i})"><rect x="${n[3]}" y="${n[4]}" width="${W}" height="${H}" rx="10"/><text x="${n[3]+14}" y="${n[4]+27}">${n[1]}</text><text class="s" x="${n[3]+14}" y="${n[4]+46}">${n[2]}</text></g>`).join('');
- $('#dg').innerHTML=h;
- const d=sel===null?['Select a component','Hover or tap any node to see its role in the architecture and follow the data flow.']:[s.nodes[sel][1],s.d[s.nodes[sel][0]]];
- $('#det').innerHTML=`<b>${d[0]}</b>${d[1]}`}
-function pick(i){if(sel===i)return;sel=i;render()}
-render();
-
-const E=[
-{t:'Model 01',n:'Project build',p:'A defined system, delivered to a fixed scope, timeline and price.',l:['Written scope and acceptance criteria','Fixed price agreed up front','Documentation and handover included','Optional run & improve plan after launch'],f:['Best for','One clear problem with a measurable outcome, such as an intake agent or an invoicing pipeline.'],g:['Commercials','Fixed price, milestone-based, agreed in writing before work starts.'],o:['You receive','A live, documented system plus the code and configuration.']},
-{t:'Model 02',n:'Embedded team',p:'A dedicated DigitalFoundry squad working as an extension of your team on a rolling roadmap.',l:['Dedicated engineers and delivery lead','Weekly planning and demo cadence','Flexible scope against a shared backlog','Scale the team up or down with notice'],f:['Best for','Mid-market teams with a continuous stream of automation and data work.'],g:['Commercials','Monthly retainer for a defined capacity, reviewed each quarter.'],o:['You receive','Steady delivery velocity and an accountable team that knows your business.']},
-{t:'Model 03',n:'Run & improve',p:'We operate, monitor and continuously improve the systems we have built for you.',l:['Monitoring, alerts and incident response','Monthly performance and quality report','Model, prompt and rule tuning','Small enhancements included'],f:['Best for','Businesses that want automation to keep working without hiring an in-house team.'],g:['Commercials','Monthly service fee scoped to the systems under management.'],o:['You receive','Systems that stay reliable and keep improving, with clear reporting.']}];
-let em=0;
-function rE(){$('#eng').innerHTML=E.map((m,i)=>`<button class="model ${i==em?'on':''}" aria-pressed="${i==em}" onclick="em=${i};rE()"><span class="t">${m.t}</span><h3>${m.n}</h3><p>${m.p}</p><ul>${m.l.map(x=>`<li>${x}</li>`).join('')}</ul></button>`).join('');
- const m=E[em];$('#fit').innerHTML=[m.f,m.g,m.o].map(x=>`<div><h4>${x[0]}</h4><p>${x[1]}</p></div>`).join('')}
-rE();
-
-const P=[
-{w:'Stage 01 · ~1 week',n:'Unpack',p:'We map how your business really runs and where time and money leak.',l:['Stakeholder interviews and process walk-throughs','Systems, data and access audit','Baseline measures for the target process'],o:'Output: process map + baseline'},
-{w:'Stage 02 · ~1 week',n:'Prioritise',p:'We choose the build that pays back fastest and agree scope up front.',l:['Impact vs effort ranking of opportunities','Architecture and risk review','Fixed scope, milestones and success measures'],o:'Output: signed scope + roadmap'},
-{w:'Stage 03 · ~3–8 weeks',n:'Forge',p:'We design, build and test the system with you in the loop.',l:['Fortnightly demos on a working system','Test sets, security and failure-mode checks','Team training and documentation'],o:'Output: tested system, ready to launch'},
-{w:'Stage 04 · ongoing',n:'Run',p:'We launch, monitor and improve it so it keeps earning its place.',l:['Staged go-live with a rollback plan','Monitoring, alerts and monthly reporting','Continuous tuning against baseline measures'],o:'Output: live system + performance reports'}];
-let pi=0;
-function rP(){$('#tl').innerHTML=P.map((x,i)=>`<button class="ph ${i==pi?'on':''}" aria-expanded="${i==pi}" onclick="pi=${i};rP()"><span class="dot"></span><div class="wk">${x.w}</div><h3>${x.n}</h3><p>${x.p}</p><div class="more"><ul>${x.l.map(y=>`<li>${y}</li>`).join('')}</ul><div class="out">${x.o}</div></div></button>`).join('')}
-rP();
-
-function calc(){const a=+$('#r1').value,b=+$('#r2').value,c=+$('#r3').value;
- $('#v1').textContent=a;$('#v2').textContent=b+' min';$('#v3').textContent=c+'%';
- const h=a*b*(c/100)*52/12/60;$('#o1').textContent=Math.round(h).toLocaleString('en-ZA');$('#o2').textContent=Math.round(h*12/8)}
-['r1','r2','r3'].forEach(i=>$('#'+i).addEventListener('input',calc));calc();
-</script>
+<section class="cta"><div class="section-inner"><div class="eyebrow reveal" style="justify-content:center">Start a project</div>
+<h2 class="heading-lg reveal">Got a process that should run itself?</h2><p class="reveal">Tell us what is slowing the business down. We will tell you plainly whether we can fix it, and what it would take.</p>
+<a href="contact.html" class="btn-primary reveal">Start a project <span>→</span></a></div></section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="js/df.js"></script>
 </body></html>

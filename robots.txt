@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yacoobmohammed19.github.io/digitalfoundry-site/sitemap.xml
